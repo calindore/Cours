@@ -1,0 +1,100 @@
+body{
+  margin : 0px;
+  font-size: 16px ;
+  font-family:Arial, Helvetica, sans-serif;
+  display :flex;
+  flex-flow: row wrap;
+  gap: 1vw;
+}
+
+h1 {
+  text-align: center;
+  color: #003FBA;
+}
+
+img {
+  width: 100%;
+  max-width: 50vw;
+}
+
+h3, h5 {
+  color: #FFAC00;
+}
+
+h2 {
+  color: #003FBA;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+ul {
+  text-align: left;
+}
+
+.index{
+  color: #009fff;
+}
+
+/* La classe description est utilisé pour les explications qui apparaissent sur la page */
+.description {
+  position: absolute; /*La position absolute est utilisé pour ne pas géner le reste des éléments de la page*/
+  border: black 1px solid;
+  background: white;
+  max-width: 35%;
+  padding: 5px;
+  font-size: 16px;
+  display: none;
+  text-align: left;
+  margin-left: 5px;
+}
+
+
+/* Id utilisées pour placer les descriptions sur la page */
+#eulerdesc{
+  margin-top: 50vh;
+}
+
+#ccna1desc {
+  margin-top: 65vh;
+}
+
+
+#gauche {
+  width: 30%;
+  text-align: center;
+  border-right: #003FBA solid 0.3vw;
+}
+
+#droite {
+  width: 68%;
+  display: flex;
+  flex-direction: column;
+}
+
+#droite div * {
+  margin-left: 3vw;
+}
+
+#droite > div {
+  border-left: #FFAC00 solid 0.3vw;
+  margin-left: 2vw;
+}
+
+#poste {
+  color: black;
+}
+
+/* Conditions quand la largeur de l'écran est devenue trop petite pour un affichage standard  */
+@media (max-width: 800px) {
+  #gauche{
+    width: 100%;
+    border: initial;
+  }
+  #droite{
+    width: initial;
+    padding: 2vw;
+  }
+  .description {
+    max-width: none;
+  }
+}
