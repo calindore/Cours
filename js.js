@@ -27,7 +27,7 @@ randompair();
 /////////////////////////////////////////Changement de Personnes/////////////////////////////////////////
 let moi = { 
       name : "moi",
-      img : "file:///Users/gauthier/Documents/Codes/bahcestmoi.jpeg",
+      img : "bahcestmoi.jpeg",
       info1 : "4Ter Avenue Victor Le Gorgeu",
       info2 : "gauthierantoine42@gmail.com",
       info3 : "06 02 50 83 42"
@@ -35,7 +35,7 @@ let moi = {
 
 let chouettes = { 
       name : "chouettes",
-      img : "file:///Users/gauthier/Documents/Codes/encoreunechouette.png",
+      img : "encoreunechouette.png",
       info1 : "Fotherdale, Angleterre",
       info2 : "Chouettes Effraies",
       info3 : "Finn à gauche, Gylfie à droite"
@@ -43,7 +43,7 @@ let chouettes = {
 
 let anakin = { 
       name : "anakin",
-      img : "file:///Users/gauthier/Documents/Codes/index.jpg",
+      img : "index.jpg",
       info1 : "Résidence Principale : Temple Jedi de Coruscant",
       info2 : "Maître Jedi Officiel",
       info3 : "Tueur du Compte Doku"

@@ -5,6 +5,7 @@ body{
   display :flex;
   flex-flow: row wrap;
   gap: 1vw;
+  animation: cubic-bezier(.55,.06,.68,.19) 2.5s apparition;
 }
 
 h1 {
@@ -55,7 +56,7 @@ ul {
 }
 
 #ccna1desc {
-  margin-top: 65vh;
+  margin-top: 57vh;
 }
 
 
@@ -71,7 +72,7 @@ ul {
   flex-direction: column;
 }
 
-#droite div * {
+#droite div > * {
   margin-left: 3vw;
 }
 
@@ -82,6 +83,15 @@ ul {
 
 #poste {
   color: black;
+}
+
+@keyframes apparition {
+  from {
+    opacity : 0;
+  }
+  to {
+    opacity : 1;
+  }
 }
 
 /* Conditions quand la largeur de l'écran est devenue trop petite pour un affichage standard  */
