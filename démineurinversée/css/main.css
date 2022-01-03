@@ -1,0 +1,19 @@
+.board {
+      display : flex;
+      flex-flow : column nowrap;
+      align-items: stretch;
+      gap: 10px;
+      max-width: 800px;
+}
+
+.row {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-evenly;
+}
+
+.tile {
+      width: 150px;
+      height: 150px;
+      background-color: indianred;
+}
