@@ -7,21 +7,26 @@ let essais = 0;
 console.log(('ATTENTION ! IL Y A UNE BOMBE DANS LA CASE '+bombRow+"-"+bombColumn));
 
 function doClick(tile){
-	ajoutessai();
-
+	let htmlessai = document.querySelector("#essais");
+	
 	if (tile === bombe) {
-		console.log("T'AS LA BOMBE ! SORT ! SORT !");
-		
-		let htmlessai = document.querySelector("#essais");
-		
-		htmlessai.innerHTML = essais + " Essai";
+		if (htmlessai.innerHTML  !== essais + " Essai") {
+			console.log("T'AS LA BOMBE ! SORT ! SORT !");
+			ajoutessai();
+			htmlessai.innerHTML = essais + " Essai";
+			document.querySelector("#"+tile).style.backgroundColor = "green";
+		}
 	}
-
+	
 	if (tile !== bombe) {
-		console.log("La bombe est dans un autre château");
+		if (htmlessai.innerHTML  !== essais + " Essai" && document.querySelector("#"+tile).style.backgroundColor !== "crimson") {
+			console.log("La bombe est dans un autre château");
+			ajoutessai();
+			document.querySelector("#"+tile).style.backgroundColor = "crimson";
+		}
 	}
 }
 
 function ajoutessai() {
 	essais++;
-}	
+}
