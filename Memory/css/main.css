@@ -1,0 +1,17 @@
+#board {
+    display : flex;
+    flex-flow : column nowrap;
+    align-items: stretch;
+    gap: 10px;
+    max-width: 800px;
+}
+
+.row {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+.doscarte{
+    max-width: 100px;
+}
